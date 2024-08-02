@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    background-image: url('images/background.png');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.character {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#char1 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 3;
+}
+
+#char2 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 5;
+}
+
+#char3 {
+    grid-column: 2 / 4;
+    grid-row: 6 / 3;
+}
+
+#char4 {
+    grid-column: 4 / 4;
+    grid-row: 5 / 4;
+}
+.character img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+}
